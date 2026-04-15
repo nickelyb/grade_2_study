@@ -8,6 +8,15 @@ import { render as renderMatch } from './templates/match_link.js';
 import { render as renderMulti } from './templates/multi_choice_orbs.js';
 import { render as renderWord } from './templates/word_builder.js';
 
+// 注册Service Worker（离线支持）
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('✅ Service Worker 已注册:', reg.scope))
+      .catch(err => console.log('❌ Service Worker 注册失败:', err));
+  });
+}
+
 // ===== 数据 =====
 let questionsData = null;   // unit4_questions_v2.json
 let taskpacksData = null;   // unit4_taskpacks_v1.json
@@ -348,4 +357,57 @@ function renderResultPage(taskId) {
       navigate('#task/' + pack.id);
     }
   });
+}
+
+// ... existing code ...
+
+  document.getElementById('retryBtn').addEventListener('click', () => {
+    playClick();
+    if (pack) {
+      clearTask(pack.id);
+      taskState = null;
+      navigate('#task/' + pack.id);
+    }
+  });
+}
+
+// PWA安装提示
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  
+  setTimeout(() => {
+    showInstallPrompt();
+  }, 3000);
+});
+
+function showInstallPrompt() {
+  const prompt = document.createElement('div');
+  prompt.className = 'install-prompt';
+  prompt.innerHTML = `
+    <span class="install-prompt-text">📱 添加到主屏幕，使用更方便！</span>
+    <button class="install-prompt-btn" id="installBtn">安装</button>
+    <button class="install-prompt-close" id="closeInstall">✕</button>
+  `;
+  
+  document.body.appendChild(prompt);
+  
+  document.getElementById('installBtn').addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log('用户选择:', outcome);
+      deferredPrompt = null;
+    }
+    prompt.remove();
+  });
+  
+  document.getElementById('closeInstall').addEventListener('click', () => {
+    prompt.remove();
+  });
+  
+  setTimeout(() => {
+    if (prompt.parentNode) prompt.remove();
+  }, 8000);
 }

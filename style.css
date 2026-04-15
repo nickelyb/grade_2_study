@@ -543,3 +543,51 @@ input { font-family: inherit; }
   .task-list { max-width: 860px; padding: 20px 32px 40px; }
   .question-area { padding: 24px 32px; max-width: 860px; }
 }
+/* ... existing code ... */
+
+/* ===== PWA安装提示 ===== */
+.install-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1000;
+  animation: slideUp 0.4s ease;
+  max-width: 90%;
+}
+@keyframes slideUp {
+  from { transform: translate(-50%, 100px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+.install-prompt-text {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 600;
+}
+.install-prompt-btn {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.install-prompt-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #999;
+}
