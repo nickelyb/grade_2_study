@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "taskPackSetId": "cn_g2b_rj_unit4_taskpacks_v1",
+    "title": "二年级下册语文第四单元任务包",
+    "bankId": "cn_g2b_rj_unit4_questions_v2",
+    "subject": "语文",
+    "grade": "二年级",
+    "unit": "第四单元",
+    "version": "1.0.0"
+  },
+  "rewardConfig": {
+    "dailyComplete": { "coins": 10, "stars": 1, "petExp": 5 },
+    "topicComplete": { "coins": 20, "stars": 2, "petExp": 10 },
+    "challengeComplete": { "coins": 30, "stars": 3, "petExp": 15 },
+    "checkinComplete": { "coins": 8, "stars": 1, "petExp": 4 }
+  },
+  "taskPacks": [
+    {
+      "id": "task_u4_day_01",
+      "title": "第四单元 第1天：识字热身",
+      "taskType": "daily",
+      "description": "重点练习会认字和多音字。",
+      "knowledgeIds": ["kp_u4_01", "kp_u4_02"],
+      "questionIds": ["q_u4_001","q_u4_002","q_u4_003","q_u4_004","q_u4_009","q_u4_010","q_u4_012"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["choice_gate", "judge_run", "match_link"],
+      "estimatedMinutes": 10,
+      "rewardKey": "dailyComplete"
+    },
+    {
+      "id": "task_u4_day_02",
+      "title": "第四单元 第2天：写字小能手",
+      "taskType": "daily",
+      "description": "重点练习会写字、结构和笔画。",
+      "knowledgeIds": ["kp_u4_03"],
+      "questionIds": ["q_u4_014","q_u4_015","q_u4_016","q_u4_017","q_u4_018","q_u4_020"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["fill_treasure", "choice_gate", "checkin_photo"],
+      "estimatedMinutes": 12,
+      "rewardKey": "dailyComplete"
+    },
+    {
+      "id": "task_u4_day_03",
+      "title": "第四单元 第3天：字词辨析站",
+      "taskType": "daily",
+      "description": "重点练习形近字和词语表。",
+      "knowledgeIds": ["kp_u4_04", "kp_u4_05"],
+      "questionIds": ["q_u4_021","q_u4_023","q_u4_025","q_u4_026","q_u4_027","q_u4_029","q_u4_031"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["fill_treasure", "choice_gate", "judge_run"],
+      "estimatedMinutes": 12,
+      "rewardKey": "dailyComplete"
+    },
+    {
+      "id": "task_u4_day_04",
+      "title": "第四单元 第4天：组词与词义",
+      "taskType": "daily",
+      "description": "重点练习一字组多词和词语辨析。",
+      "knowledgeIds": ["kp_u4_06", "kp_u4_07"],
+      "questionIds": ["q_u4_033","q_u4_034","q_u4_036","q_u4_039","q_u4_040","q_u4_041","q_u4_042"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["word_builder", "multi_choice_orbs", "choice_gate"],
+      "estimatedMinutes": 12,
+      "rewardKey": "dailyComplete"
+    },
+    {
+      "id": "task_u4_day_05",
+      "title": "第四单元 第5天：句子和课文",
+      "taskType": "daily",
+      "description": "重点练习句式与课文理解。",
+      "knowledgeIds": ["kp_u4_08", "kp_u4_09"],
+      "questionIds": ["q_u4_045","q_u4_046","q_u4_051","q_u4_052","q_u4_054","q_u4_056","q_u4_057"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["choice_gate", "judge_run"],
+      "estimatedMinutes": 12,
+      "rewardKey": "dailyComplete"
+    },
+    {
+      "id": "task_u4_day_06",
+      "title": "第四单元 第6天：积累与背诵",
+      "taskType": "daily",
+      "description": "重点练习日积月累和诚信格言。",
+      "knowledgeIds": ["kp_u4_10"],
+      "questionIds": ["q_u4_062","q_u4_063","q_u4_064","q_u4_065","q_u4_066","q_u4_067","q_u4_068"],
+      "gameMode": "mixed",
+      "recommendedTemplates": ["fill_treasure", "match_link", "judge_run", "checkin_audio"],
+      "estimatedMinutes": 10,
+      "rewardKey": "dailyComplete"
+    },
+
+    {
+      "id": "task_u4_topic_recognition",
+      "title": "专项：会认字与多音字",
+      "taskType": "topic",
+      "description": "识字、读音、多音字集中训练。",
+      "knowledgeIds": ["kp_u4_01", "kp_u4_02"],
+      "questionIds": ["q_u4_001","q_u4_002","q_u4_003","q_u4_004","q_u4_005","q_u4_006","q_u4_007","q_u4_008","q_u4_009","q_u4_010","q_u4_011","q_u4_012","q_u4_013"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["choice_gate", "judge_run", "match_link"],
+      "estimatedMinutes": 18,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_write",
+      "title": "专项：会写字",
+      "taskType": "topic",
+      "description": "结构、笔画、书写综合训练。",
+      "knowledgeIds": ["kp_u4_03"],
+      "questionIds": ["q_u4_014","q_u4_015","q_u4_016","q_u4_017","q_u4_018","q_u4_019","q_u4_020"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["fill_treasure", "choice_gate", "checkin_photo"],
+      "estimatedMinutes": 15,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_word",
+      "title": "专项：形近字与词语表",
+      "taskType": "topic",
+      "description": "字形辨析、词语补全、词义理解。",
+      "knowledgeIds": ["kp_u4_04", "kp_u4_05"],
+      "questionIds": ["q_u4_021","q_u4_022","q_u4_023","q_u4_024","q_u4_025","q_u4_026","q_u4_027","q_u4_028","q_u4_029","q_u4_030","q_u4_031","q_u4_032","q_u4_069","q_u4_070"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["fill_treasure", "choice_gate", "multi_choice_orbs"],
+      "estimatedMinutes": 20,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_groupword",
+      "title": "专项：一字组多词与词语辨析",
+      "taskType": "topic",
+      "description": "组词、词义、近义辨析综合训练。",
+      "knowledgeIds": ["kp_u4_06", "kp_u4_07"],
+      "questionIds": ["q_u4_033","q_u4_034","q_u4_035","q_u4_036","q_u4_037","q_u4_038","q_u4_039","q_u4_040","q_u4_041","q_u4_042","q_u4_043","q_u4_044","q_u4_071","q_u4_072"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["word_builder", "choice_gate", "judge_run", "multi_choice_orbs"],
+      "estimatedMinutes": 22,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_sentence",
+      "title": "专项：重点句式",
+      "taskType": "topic",
+      "description": "比喻句、一会儿句式、仿写表达。",
+      "knowledgeIds": ["kp_u4_08"],
+      "questionIds": ["q_u4_045","q_u4_046","q_u4_047","q_u4_048","q_u4_049","q_u4_050","q_u4_073","q_u4_074","q_u4_080"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["choice_gate", "guided_sentence", "judge_run"],
+      "estimatedMinutes": 18,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_text",
+      "title": "专项：课文内容理解",
+      "taskType": "topic",
+      "description": "彩色的梦、枫树上的喜鹊、一匹出色的马等课文理解。",
+      "knowledgeIds": ["kp_u4_09"],
+      "questionIds": ["q_u4_051","q_u4_052","q_u4_053","q_u4_054","q_u4_055","q_u4_056","q_u4_057","q_u4_058","q_u4_059","q_u4_060","q_u4_061","q_u4_075","q_u4_076","q_u4_077"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["choice_gate", "judge_run", "fill_treasure", "multi_choice_orbs"],
+      "estimatedMinutes": 22,
+      "rewardKey": "topicComplete"
+    },
+    {
+      "id": "task_u4_topic_recite",
+      "title": "专项：日积月累",
+      "taskType": "topic",
+      "description": "诚信格言的识记、理解和背诵。",
+      "knowledgeIds": ["kp_u4_10"],
+      "questionIds": ["q_u4_062","q_u4_063","q_u4_064","q_u4_065","q_u4_066","q_u4_067","q_u4_068","q_u4_078","q_u4_079"],
+      "gameMode": "topic_practice",
+      "recommendedTemplates": ["fill_treasure", "match_link", "choice_gate", "checkin_audio"],
+      "estimatedMinutes": 16,
+      "rewardKey": "topicComplete"
+    },
+
+    {
+      "id": "task_u4_challenge_basic",
+      "title": "闯关：第四单元基础关",
+      "taskType": "challenge",
+      "description": "基础题为主，适合首次复习。",
+      "knowledgeIds": ["kp_u4_01","kp_u4_02","kp_u4_03","kp_u4_04","kp_u4_05"],
+      "questionIds": ["q_u4_001","q_u4_003","q_u4_009","q_u4_014","q_u4_015","q_u4_021","q_u4_026","q_u4_027","q_u4_031","q_u4_062"],
+      "gameMode": "level_mode",
+      "recommendedTemplates": ["choice_gate", "fill_treasure"],
+      "estimatedMinutes": 15,
+      "rewardKey": "challengeComplete"
+    },
+    {
+      "id": "task_u4_challenge_advanced",
+      "title": "闯关：第四单元提升关",
+      "taskType": "challenge",
+      "description": "加入理解、匹配和多选题。",
+      "knowledgeIds": ["kp_u4_02","kp_u4_05","kp_u4_07","kp_u4_08","kp_u4_09","kp_u4_10"],
+      "questionIds": ["q_u4_012","q_u4_032","q_u4_036","q_u4_039","q_u4_040","q_u4_045","q_u4_046","q_u4_051","q_u4_056","q_u4_065"],
+      "gameMode": "level_mode",
+      "recommendedTemplates": ["match_link", "choice_gate", "fill_treasure"],
+      "estimatedMinutes": 18,
+      "rewardKey": "challengeComplete"
+    },
+    {
+      "id": "task_u4_challenge_boss",
+      "title": "闯关：第四单元Boss关",
+      "taskType": "challenge",
+      "description": "综合能力挑战，适合单元结束后测。",
+      "knowledgeIds": ["kp_u4_01","kp_u4_02","kp_u4_03","kp_u4_04","kp_u4_05","kp_u4_06","kp_u4_07","kp_u4_08","kp_u4_09","kp_u4_10"],
+      "questionIds": ["q_u4_006","q_u4_013","q_u4_018","q_u4_023","q_u4_032","q_u4_036","q_u4_042","q_u4_050","q_u4_061","q_u4_065","q_u4_071","q_u4_078"],
+      "gameMode": "boss_mode",
+      "recommendedTemplates": ["choice_gate", "judge_run", "fill_treasure", "match_link"],
+      "estimatedMinutes": 20,
+      "rewardKey": "challengeComplete"
+    },
+
+    {
+      "id": "task_u4_checkin_write",
+      "title": "打卡：本单元写字打卡",
+      "taskType": "checkin",
+      "description": "规范书写本单元重点会写字。",
+      "knowledgeIds": ["kp_u4_03"],
+      "questionIds": ["q_u4_020"],
+      "gameMode": "checkin_mode",
+      "recommendedTemplates": ["checkin_photo"],
+      "estimatedMinutes": 8,
+      "rewardKey": "checkinComplete"
+    },
+    {
+      "id": "task_u4_checkin_recite",
+      "title": "打卡：本单元背诵打卡",
+      "taskType": "checkin",
+      "description": "完成日积月累背诵。",
+      "knowledgeIds": ["kp_u4_10"],
+      "questionIds": ["q_u4_068"],
+      "gameMode": "checkin_mode",
+      "recommendedTemplates": ["checkin_audio"],
+      "estimatedMinutes": 6,
+      "rewardKey": "checkinComplete"
+    },
+
+    {
+      "id": "task_u4_review_all",
+      "title": "第四单元总复习",
+      "taskType": "review",
+      "description": "覆盖全单元重点内容的综合复习包。",
+      "knowledgeIds": ["kp_u4_01","kp_u4_02","kp_u4_03","kp_u4_04","kp_u4_05","kp_u4_06","kp_u4_07","kp_u4_08","kp_u4_09","kp_u4_10"],
+      "questionIds": [
+        "q_u4_001","q_u4_005","q_u4_009","q_u4_014","q_u4_016",
+        "q_u4_021","q_u4_026","q_u4_033","q_u4_039","q_u4_045",
+        "q_u4_046","q_u4_051","q_u4_054","q_u4_056","q_u4_062",
+        "q_u4_063","q_u4_065","q_u4_067","q_u4_071","q_u4_078"
+      ],
+      "gameMode": "review_mode",
+      "recommendedTemplates": ["choice_gate", "fill_treasure", "match_link", "word_builder"],
+      "estimatedMinutes": 25,
+      "rewardKey": "challengeComplete"
+    }
+  ]
+}
